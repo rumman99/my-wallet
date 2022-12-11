@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="id2">
+        <h3 class="text-center mt-5">My Wallet</h3>
+        <div class="form-group shadow p-4 mb-5 bg-white rounded">
+            <h4>LOGIN</h4>
+            <input class="form-control mt-3" type="text" placeholder="Enter Your Name">
+            <input class="form-control mt-3" type="password" placeholder="Enter Your Password">
+            <button id="loginButton" class="btn btn-success mt-3">Login</button>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="space add_money">
+                    <h4>Add Money</h4>
+                    <h2>$<span id="insertMoney">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="space take_money">
+                    <h4>Take Money</h4>
+                    <h2>$<span id="okMoney">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="space total_money">
+                    <h4>Total Money</h4>
+                    <h2>$<span id="totalMoney">2000</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="second_space col-md-4 form-group shadow p-4 mb-5 bg-white rounded">
+                <div class="">
+                <h4>Add</h4>
+                <input id="value" class="form-control mt-3" type="text" placeholder="Add Money">
+                <button id="addMoney" class="btn btn-success mt-3">Add</button>
+                </div>
+            </div>
+            <div class="col-md-4 form-group shadow p-4 mb-5 bg-white rounded">
+                <div class="">
+                <h4>Take</h4>
+                <input id="value2" class="form-control mt-3" type="text" placeholder="Take Money">
+                <button id="takeMoney" class="btn btn-success mt-3">Take</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
